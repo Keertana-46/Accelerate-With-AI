@@ -1,0 +1,12 @@
+source_column,target_column,target_type,transformation,description
+order_id,order_id,integer,cast_numeric,"Unique identifier for the order, cast to integer type"
+order_date,order_date,date,to_date,"Date the order was placed, parsed from YYYY-MM-DD string format"
+region,region,string,title_case,"Geographic region of the order, standardized to title case"
+customer_id,customer_id,string,passthrough,"Unique identifier for the customer, kept as-is"
+product_category,product_category,string,title_case,"Category of the product sold, standardized to title case"
+product_name,product_name,string,title_case,"Name of the product sold, standardized to title case"
+quantity,quantity,integer,cast_numeric,"Number of units ordered, cast to integer type"
+unit_price,unit_price,decimal,strip_currency,"Price per unit, stripped of currency symbols/commas and cast to numeric"
+discount,discount,decimal,cast_numeric,"Discount rate applied to the order, cast to decimal type"
+shipping_days,shipping_days,integer,cast_numeric,"Number of days taken to ship the order, cast to integer for shipping performance analysis"
+channel,channel,string,title_case,Sales channel (Online/Offline) standardized to title case for channel effectiveness comparison

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retail-medallion-pipeline"
+version = "1.0.0"
+description = "Agentic Medallion (Bronze/Silver/Gold) pipeline with Streamlit UI and human-in-the-loop approvals."
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.setuptools]
+packages = ["agents", "core"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-q --cov=agents --cov=core --cov-report=term-missing --cov-fail-under=55"
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.coverage.run]
+branch = true
+source = ["agents", "core"]
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true

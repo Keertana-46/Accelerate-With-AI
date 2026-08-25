@@ -1,0 +1,15 @@
+source_column,target_column,target_type,transformation,description
+order_id,order_id,integer,passthrough,Silver cleansed passthrough for order_id
+order_date,order_date,date,passthrough,Silver cleansed passthrough for order_date
+region,region,string,passthrough,Silver cleansed passthrough for region
+customer_id,customer_id,string,passthrough,Silver cleansed passthrough for customer_id
+product_category,product_category,string,passthrough,Silver cleansed passthrough for product_category
+product_name,product_name,string,passthrough,Silver cleansed passthrough for product_name
+quantity,quantity,integer,passthrough,Silver cleansed passthrough for quantity
+unit_price,unit_price,decimal,passthrough,Silver cleansed passthrough for unit_price
+discount,discount,decimal,passthrough,Silver cleansed passthrough for discount
+shipping_days,shipping_days,integer,passthrough,Silver cleansed passthrough for shipping_days
+channel,channel,string,passthrough,Silver cleansed passthrough for channel
+,total_amount_calculated,float,derive,unit_price * quantity when available
+,amount_variance_flag,string,derive,flag when stated total differs from calculated
+,days_to_ship,float,derive,difference between ship and order dates

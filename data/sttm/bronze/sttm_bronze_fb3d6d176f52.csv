@@ -1,0 +1,9 @@
+source_column,target_column,target_type,transformation,description
+order_id,order_id,float,cast_numeric,Bronze mapping for order_id
+customer_id,customer_id,string,passthrough,Bronze mapping for customer_id
+order_date,order_date,string,to_date,Bronze mapping for order_date
+ship_date,ship_date,string,to_date,Bronze mapping for ship_date
+product,product,string,passthrough,Bronze mapping for product
+unit_price,unit_price,float,strip_currency,Bronze mapping for unit_price
+quantity,quantity,float,cast_numeric,Bronze mapping for quantity
+total_amount,total_amount,float,strip_currency,Bronze mapping for total_amount

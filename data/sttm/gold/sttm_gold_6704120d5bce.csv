@@ -1,0 +1,12 @@
+source_column,target_column,target_type,transformation,description
+order_date|order_id,revenue_by_order_date,table,target_table,Aggregate order_id grouped by order_date
+region|order_id,revenue_by_region,table,target_table,Aggregate order_id grouped by region
+customer_id|order_id,revenue_by_customer_id,table,target_table,Aggregate order_id grouped by customer_id
+order_date|quantity,revenue_by_order_date,table,target_table,Aggregate quantity grouped by order_date
+region|quantity,revenue_by_region,table,target_table,Aggregate quantity grouped by region
+customer_id|quantity,revenue_by_customer_id,table,target_table,Aggregate quantity grouped by customer_id
+order_date|unit_price,revenue_by_order_date,table,target_table,Aggregate unit_price grouped by order_date
+region|unit_price,revenue_by_region,table,target_table,Aggregate unit_price grouped by region
+customer_id|unit_price,revenue_by_customer_id,table,target_table,Aggregate unit_price grouped by customer_id
+order_date|order_id,monthly_trend,table,target_table,Monthly trend of order_id by order_date
+order_id|order_id,top_customers,table,target_table,Top entities by order_id for order_id

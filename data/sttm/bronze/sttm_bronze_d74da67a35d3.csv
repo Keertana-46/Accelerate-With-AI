@@ -1,0 +1,12 @@
+source_column,target_column,target_type,transformation,description
+order_id,order_id,integer,cast_numeric,Unique order identifier cast to integer
+order_date,order_date,date,to_date,Order date parsed from YYYY-MM-DD string format
+region,region,string,title_case,Sales region name standardized to title case
+customer_id,customer_id,string,passthrough,Customer identifier passed through unchanged
+product_category,product_category,string,title_case,Product category standardized to title case for consistent grouping
+product_name,product_name,string,title_case,Product name standardized to title case
+quantity,quantity,integer,cast_numeric,Quantity of units sold cast to integer
+unit_price,unit_price,decimal,strip_currency,Unit price cleaned of currency symbols and cast to decimal
+discount,discount,decimal,cast_numeric,Discount rate cast to decimal for revenue calculations
+shipping_days,shipping_days,integer,cast_numeric,Number of days taken for shipping cast to integer
+channel,channel,string,title_case,Sales channel standardized to title case

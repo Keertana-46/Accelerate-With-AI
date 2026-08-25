@@ -1,0 +1,13 @@
+order_id,order_date,region,customer_id,product_category,product_name,quantity,unit_price,discount,shipping_days,channel
+1001,2024-01-05,South,C001,Electronics,Mobile Phone,2,15000,0.10,3,Online
+1002,2024-01-06,North,C002,Furniture,Office Chair,1,7000,0.05,5,Offline
+1003,2024-01-07,West,C003,Electronics,Laptop,1,55000,0.15,7,Online
+1004,2024-01-08,East,C004,Clothing,T-Shirt,5,500,0.20,2,Online
+1005,2024-01-09,South,C005,Electronics,Headphones,3,2000,0.10,4,Offline
+1006,2024-01-10,North,C006,Furniture,Table,1,12000,0.08,6,Offline
+1007,2024-01-11,West,C007,Clothing,Jeans,2,2500,0.12,3,Online
+1008,2024-01-12,East,C008,Electronics,Tablet,1,20000,0.18,5,Online
+1009,2024-01-13,South,C009,Clothing,Shoes,2,3000,0.07,2,Offline
+1010,2024-01-14,North,C010,Electronics,Smartwatch,1,8000,0.05,4,Online
+1011,2024-01-15,West,C011,Furniture,Sofa,1,30000,0.20,10,Offline
+1012,2024-01-16,East,C012,Clothing,Jacket,1,4000,0.10,3,Online

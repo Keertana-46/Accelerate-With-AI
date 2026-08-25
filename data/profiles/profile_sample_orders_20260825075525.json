@@ -1,0 +1,255 @@
+{
+  "run_id": "fb3d6d176f52",
+  "file_path": "C:\\Users\\keum\\Downloads\\Agentic_Ai_For_Beginner-main\\retail-medallion-pipeline\\data\\uploads\\sample_orders.csv",
+  "business_intent": "",
+  "generated_at": "2026-08-25T07:55:25.230216",
+  "inspection": {
+    "file_path": "C:\\Users\\keum\\Downloads\\Agentic_Ai_For_Beginner-main\\retail-medallion-pipeline\\data\\uploads\\sample_orders.csv",
+    "shape": [
+      15,
+      8
+    ],
+    "columns": [
+      "order_id",
+      "customer_id",
+      "order_date",
+      "ship_date",
+      "product",
+      "unit_price",
+      "quantity",
+      "total_amount"
+    ],
+    "dtypes": {
+      "order_id": "string",
+      "customer_id": "string",
+      "order_date": "string",
+      "ship_date": "string",
+      "product": "string",
+      "unit_price": "string",
+      "quantity": "string",
+      "total_amount": "string"
+    },
+    "sample_values": {
+      "order_id": [
+        "1001",
+        "1002",
+        "1003",
+        "1004",
+        "1005"
+      ],
+      "customer_id": [
+        "C001",
+        "C002",
+        "C001",
+        "C003",
+        "C002"
+      ],
+      "order_date": [
+        "2024-01-05",
+        "01/06/2024",
+        "2024-01-07",
+        "01/09/2024",
+        "2024-01-11"
+      ],
+      "ship_date": [
+        "2024-01-08",
+        "01/10/2024",
+        "2024-01-09",
+        "01/15/2024",
+        "2024-01-14"
+      ],
+      "product": [
+        "widget alpha",
+        "widget beta",
+        "widget gamma",
+        "widget alpha",
+        "widget delta"
+      ],
+      "unit_price": [
+        "$12.50",
+        "$8.00",
+        "$15.25",
+        "$12.50",
+        "$20.00"
+      ],
+      "quantity": [
+        "3",
+        "5",
+        "2",
+        "1",
+        "4"
+      ],
+      "total_amount": [
+        "$37.50",
+        "$40.00",
+        "$30.50",
+        "$12.50",
+        "$80.00"
+      ]
+    },
+    "missing_counts": {
+      "order_id": 0,
+      "customer_id": 0,
+      "order_date": 0,
+      "ship_date": 0,
+      "product": 0,
+      "unit_price": 0,
+      "quantity": 0,
+      "total_amount": 0
+    }
+  },
+  "statistics": {
+    "file_path": "C:\\Users\\keum\\Downloads\\Agentic_Ai_For_Beginner-main\\retail-medallion-pipeline\\data\\uploads\\sample_orders.csv",
+    "columns": {
+      "order_id": {
+        "count": 15,
+        "non_null": 15,
+        "missing": 0,
+        "unique": 15,
+        "is_numeric_like": true,
+        "date_formats": [],
+        "quality_flags": [],
+        "sample": [
+          "1001",
+          "1002",
+          "1003",
+          "1004",
+          "1005"
+        ]
+      },
+      "customer_id": {
+        "count": 15,
+        "non_null": 15,
+        "missing": 0,
+        "unique": 5,
+        "is_numeric_like": false,
+        "date_formats": [],
+        "quality_flags": [],
+        "sample": [
+          "C001",
+          "C002",
+          "C001",
+          "C003",
+          "C002"
+        ]
+      },
+      "order_date": {
+        "count": 15,
+        "non_null": 15,
+        "missing": 0,
+        "unique": 15,
+        "is_numeric_like": false,
+        "date_formats": [
+          "^\\d{2}/\\d{2}/\\d{4}$",
+          "^\\d{4}-\\d{2}-\\d{2}$"
+        ],
+        "quality_flags": [
+          "mixed_date_formats"
+        ],
+        "sample": [
+          "2024-01-05",
+          "01/06/2024",
+          "2024-01-07",
+          "01/09/2024",
+          "2024-01-11"
+        ]
+      },
+      "ship_date": {
+        "count": 15,
+        "non_null": 15,
+        "missing": 0,
+        "unique": 15,
+        "is_numeric_like": false,
+        "date_formats": [
+          "^\\d{2}/\\d{2}/\\d{4}$",
+          "^\\d{4}-\\d{2}-\\d{2}$"
+        ],
+        "quality_flags": [
+          "mixed_date_formats"
+        ],
+        "sample": [
+          "2024-01-08",
+          "01/10/2024",
+          "2024-01-09",
+          "01/15/2024",
+          "2024-01-14"
+        ]
+      },
+      "product": {
+        "count": 15,
+        "non_null": 15,
+        "missing": 0,
+        "unique": 4,
+        "is_numeric_like": false,
+        "date_formats": [],
+        "quality_flags": [],
+        "sample": [
+          "widget alpha",
+          "widget beta",
+          "widget gamma",
+          "widget alpha",
+          "widget delta"
+        ]
+      },
+      "unit_price": {
+        "count": 15,
+        "non_null": 15,
+        "missing": 0,
+        "unique": 4,
+        "is_numeric_like": true,
+        "date_formats": [],
+        "quality_flags": [
+          "currency_formatted"
+        ],
+        "sample": [
+          "$12.50",
+          "$8.00",
+          "$15.25",
+          "$12.50",
+          "$20.00"
+        ]
+      },
+      "quantity": {
+        "count": 15,
+        "non_null": 15,
+        "missing": 0,
+        "unique": 9,
+        "is_numeric_like": true,
+        "date_formats": [],
+        "quality_flags": [],
+        "sample": [
+          "3",
+          "5",
+          "2",
+          "1",
+          "4"
+        ]
+      },
+      "total_amount": {
+        "count": 15,
+        "non_null": 15,
+        "missing": 0,
+        "unique": 13,
+        "is_numeric_like": true,
+        "date_formats": [],
+        "quality_flags": [
+          "currency_formatted"
+        ],
+        "sample": [
+          "$37.50",
+          "$40.00",
+          "$30.50",
+          "$12.50",
+          "$80.00"
+        ]
+      }
+    }
+  },
+  "semantic_meanings": {},
+  "quality_notes": [
+    "Column 'order_date' has mixed date formats.",
+    "Column 'ship_date' has mixed date formats.",
+    "Column 'unit_price' contains currency formatted values.",
+    "Column 'total_amount' contains currency formatted values."
+  ]
+}

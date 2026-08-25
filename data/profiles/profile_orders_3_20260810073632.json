@@ -1,0 +1,330 @@
+{
+  "run_id": "4bb0972038ce",
+  "file_path": "C:\\Users\\keum\\Downloads\\Agentic_Ai_For_Beginner-main\\retail-medallion-pipeline\\data\\uploads\\orders_3.csv",
+  "business_intent": "",
+  "generated_at": "2026-08-10T07:36:32.071424",
+  "inspection": {
+    "file_path": "C:\\Users\\keum\\Downloads\\Agentic_Ai_For_Beginner-main\\retail-medallion-pipeline\\data\\uploads\\orders_3.csv",
+    "shape": [
+      12,
+      11
+    ],
+    "columns": [
+      "order_id",
+      "order_date",
+      "region",
+      "customer_id",
+      "product_category",
+      "product_name",
+      "quantity",
+      "unit_price",
+      "discount",
+      "shipping_days",
+      "channel"
+    ],
+    "dtypes": {
+      "order_id": "string",
+      "order_date": "string",
+      "region": "string",
+      "customer_id": "string",
+      "product_category": "string",
+      "product_name": "string",
+      "quantity": "string",
+      "unit_price": "string",
+      "discount": "string",
+      "shipping_days": "string",
+      "channel": "string"
+    },
+    "sample_values": {
+      "order_id": [
+        "1001",
+        "1002",
+        "1003",
+        "1004",
+        "1005"
+      ],
+      "order_date": [
+        "2024-01-05",
+        "2024-01-06",
+        "2024-01-07",
+        "2024-01-08",
+        "2024-01-09"
+      ],
+      "region": [
+        "South",
+        "North",
+        "West",
+        "East",
+        "South"
+      ],
+      "customer_id": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005"
+      ],
+      "product_category": [
+        "Electronics",
+        "Furniture",
+        "Electronics",
+        "Clothing",
+        "Electronics"
+      ],
+      "product_name": [
+        "Mobile Phone",
+        "Office Chair",
+        "Laptop",
+        "T-Shirt",
+        "Headphones"
+      ],
+      "quantity": [
+        "2",
+        "1",
+        "1",
+        "5",
+        "3"
+      ],
+      "unit_price": [
+        "15000",
+        "7000",
+        "55000",
+        "500",
+        "2000"
+      ],
+      "discount": [
+        "0.10",
+        "0.05",
+        "0.15",
+        "0.20",
+        "0.10"
+      ],
+      "shipping_days": [
+        "3",
+        "5",
+        "7",
+        "2",
+        "4"
+      ],
+      "channel": [
+        "Online",
+        "Offline",
+        "Online",
+        "Online",
+        "Offline"
+      ]
+    },
+    "missing_counts": {
+      "order_id": 0,
+      "order_date": 0,
+      "region": 0,
+      "customer_id": 0,
+      "product_category": 0,
+      "product_name": 0,
+      "quantity": 0,
+      "unit_price": 0,
+      "discount": 0,
+      "shipping_days": 0,
+      "channel": 0
+    }
+  },
+  "statistics": {
+    "file_path": "C:\\Users\\keum\\Downloads\\Agentic_Ai_For_Beginner-main\\retail-medallion-pipeline\\data\\uploads\\orders_3.csv",
+    "columns": {
+      "order_id": {
+        "count": 12,
+        "non_null": 12,
+        "missing": 0,
+        "unique": 12,
+        "is_numeric_like": true,
+        "date_formats": [],
+        "quality_flags": [],
+        "sample": [
+          "1001",
+          "1002",
+          "1003",
+          "1004",
+          "1005"
+        ]
+      },
+      "order_date": {
+        "count": 12,
+        "non_null": 12,
+        "missing": 0,
+        "unique": 12,
+        "is_numeric_like": false,
+        "date_formats": [
+          "^\\d{4}-\\d{2}-\\d{2}$"
+        ],
+        "quality_flags": [],
+        "sample": [
+          "2024-01-05",
+          "2024-01-06",
+          "2024-01-07",
+          "2024-01-08",
+          "2024-01-09"
+        ]
+      },
+      "region": {
+        "count": 12,
+        "non_null": 12,
+        "missing": 0,
+        "unique": 4,
+        "is_numeric_like": false,
+        "date_formats": [],
+        "quality_flags": [],
+        "sample": [
+          "South",
+          "North",
+          "West",
+          "East",
+          "South"
+        ]
+      },
+      "customer_id": {
+        "count": 12,
+        "non_null": 12,
+        "missing": 0,
+        "unique": 12,
+        "is_numeric_like": false,
+        "date_formats": [],
+        "quality_flags": [],
+        "sample": [
+          "C001",
+          "C002",
+          "C003",
+          "C004",
+          "C005"
+        ]
+      },
+      "product_category": {
+        "count": 12,
+        "non_null": 12,
+        "missing": 0,
+        "unique": 3,
+        "is_numeric_like": false,
+        "date_formats": [],
+        "quality_flags": [],
+        "sample": [
+          "Electronics",
+          "Furniture",
+          "Electronics",
+          "Clothing",
+          "Electronics"
+        ]
+      },
+      "product_name": {
+        "count": 12,
+        "non_null": 12,
+        "missing": 0,
+        "unique": 12,
+        "is_numeric_like": false,
+        "date_formats": [],
+        "quality_flags": [],
+        "sample": [
+          "Mobile Phone",
+          "Office Chair",
+          "Laptop",
+          "T-Shirt",
+          "Headphones"
+        ]
+      },
+      "quantity": {
+        "count": 12,
+        "non_null": 12,
+        "missing": 0,
+        "unique": 4,
+        "is_numeric_like": true,
+        "date_formats": [],
+        "quality_flags": [],
+        "sample": [
+          "2",
+          "1",
+          "1",
+          "5",
+          "3"
+        ]
+      },
+      "unit_price": {
+        "count": 12,
+        "non_null": 12,
+        "missing": 0,
+        "unique": 12,
+        "is_numeric_like": true,
+        "date_formats": [],
+        "quality_flags": [],
+        "sample": [
+          "15000",
+          "7000",
+          "55000",
+          "500",
+          "2000"
+        ]
+      },
+      "discount": {
+        "count": 12,
+        "non_null": 12,
+        "missing": 0,
+        "unique": 8,
+        "is_numeric_like": true,
+        "date_formats": [],
+        "quality_flags": [],
+        "sample": [
+          "0.10",
+          "0.05",
+          "0.15",
+          "0.20",
+          "0.10"
+        ]
+      },
+      "shipping_days": {
+        "count": 12,
+        "non_null": 12,
+        "missing": 0,
+        "unique": 7,
+        "is_numeric_like": true,
+        "date_formats": [],
+        "quality_flags": [],
+        "sample": [
+          "3",
+          "5",
+          "7",
+          "2",
+          "4"
+        ]
+      },
+      "channel": {
+        "count": 12,
+        "non_null": 12,
+        "missing": 0,
+        "unique": 2,
+        "is_numeric_like": false,
+        "date_formats": [],
+        "quality_flags": [],
+        "sample": [
+          "Online",
+          "Offline",
+          "Online",
+          "Online",
+          "Offline"
+        ]
+      }
+    }
+  },
+  "semantic_meanings": {
+    "order_id": "Unique identifier for the order",
+    "order_date": "Date the order was placed",
+    "region": "Geographic region associated with the order",
+    "customer_id": "Unique identifier for the customer",
+    "product_category": "Category classification of the product",
+    "product_name": "Name of the product ordered",
+    "quantity": "Number of units ordered",
+    "unit_price": "Price per unit of the product",
+    "discount": "Discount applied to the order or product",
+    "shipping_days": "Number of days taken for shipping/delivery",
+    "channel": "Sales or order channel (e.g., online, retail, etc.)"
+  },
+  "quality_notes": [
+    "No structural quality issues detected."
+  ]
+}

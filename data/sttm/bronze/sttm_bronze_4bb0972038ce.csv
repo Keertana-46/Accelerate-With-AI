@@ -1,0 +1,12 @@
+source_column,target_column,target_type,transformation,description
+order_id,order_id,integer,cast_numeric,Convert order_id from string to integer type for consistent numeric identification.
+order_date,order_date,date,to_date,Parse order_date string in YYYY-MM-DD format into a proper date type.
+region,region,string,title_case,Standardize region names to title case for consistent categorical values.
+customer_id,customer_id,string,passthrough,Retain customer_id as-is since it is already a standardized identifier code.
+product_category,product_category,string,title_case,Standardize product category text to title case for consistent reporting.
+product_name,product_name,string,title_case,Standardize product name text to title case for consistent display.
+quantity,quantity,integer,cast_numeric,Convert quantity from string to integer type for aggregation and calculations.
+unit_price,unit_price,decimal,cast_numeric,Convert unit_price from string to decimal type for accurate numeric calculations.
+discount,discount,decimal,cast_numeric,Convert discount from string to decimal type representing the discount rate.
+shipping_days,shipping_days,integer,cast_numeric,Convert shipping_days from string to integer type for numeric analysis of delivery time.
+channel,channel,string,title_case,Standardize channel values to title case for consistent categorical reporting.
